@@ -26,11 +26,14 @@ function App() {
       <CurrencyRow
         currencyOptions={currencyOptions}
         selectedCurrency= {fromCurrency}
+        onChangeCurrency= {event => setFromCurrency(event.target.value)}
+
       />
       <div className="equals">=</div>
       <CurrencyRow
         currencyOptions={currencyOptions}
         selectedCurrency= {toCurrency}
+        onChangeCurrency= {event => setToCurrency(event.target.value)}
       />
     </>
   );
