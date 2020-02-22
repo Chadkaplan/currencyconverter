@@ -33,6 +33,10 @@ function App() {
       })
   }, [])
 
+  useEffect(() => {
+    
+  })
+
   function handleFromAmountChange(e) {
     setAmount(e.target.value)
     setAmountInFromCurrency(true)
